@@ -1,0 +1,122 @@
+/* name: Christian P. Byrne
+ * class: CSC337 Spring 2021
+ * description: global stylesheet for static roadrunner wiki. Using grid in main container for responsiveness and material elevation system.
+ */ 
+
+:root {
+  --primary: hsl(262, 100%, 77%);
+  --secondary: hsl(279, 100%, 86%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.material-surface {
+  background: linear-gradient(
+      hsla(0, 0%, 100%, var(--overlay)),
+      hsla(0, 0%, 100%, var(--overlay))
+    ),
+    linear-gradient(#121212, #121212);
+  box-shadow: var(--elevation) calc(var(--elevation) * 1.1) 4px
+      hsla(0, 0%, 5%, 0.6),
+    calc(var(--elevation) * 0.3) calc(var(--elevation) * 0.35) 1.5px
+      hsla(0, 0%, 5%, 0.6);
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  place-items: center;
+  font-family: Roboto, monospace, sans-serif;
+  font-size: 12px;
+  --elevation: 0.1px;
+  --overlay: 0.01;
+  padding: 12px;
+}
+
+h1,
+h3,
+h4 {
+  opacity: 0.87;
+}
+
+p {
+  padding: 1ch 0 1.5ch;
+  opacity: 0.6;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+h1 {
+  color: var(--primary);
+  font-size: 5rem;
+  letter-spacing: -1.5px;
+  font-weight: lighter;
+  text-shadow: 1px 1px #282828;
+  margin: 2px;
+}
+
+h3 {
+  color: var(--secondary);
+  font-size: 3rem;
+  letter-spacing: -0.5;
+  font-weight: normal;
+}
+
+h4,
+ol,
+ul {
+  font-size: 0.75rem;
+  letter-spacing: 0.25;
+  color: #b3b3b3;
+  padding: 6px;
+  list-style-position: inside;
+}
+
+h5 {
+  font-size: 1.25rem;
+  letter-spacing: 0.25;
+  color: var(--secondary);
+}
+
+.main {
+  display: grid;
+  grid-template-columns: fit-content(30ch) minmax(min(50vw, 40ch), 1fr);
+  grid-column-gap: 0px;
+  --elevation: 3px;
+  --overlay: 0.05;
+}
+
+.main > div:nth-of-type(1) {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 1rem 0 1rem 1rem;
+}
+img {
+  max-width: 120%;
+  height: auto;
+  object-fit: cover;
+}
+
+.directory,
+ul {
+  --elevation: 4px;
+  --overlay: 0.07;
+  margin: 12px 0 0 0;
+}
+
+.main > div:nth-of-type(2) {
+  --elevation: 8px;
+  --overlay: 0.12;
+  margin: 1rem;
+  padding: 1rem;
+}

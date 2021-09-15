@@ -1,0 +1,46 @@
+{
+  "name": "pa6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "translator.js",
+  "scripts": {
+    "test-u": "xargs -a __urls__.txt -i nohup >/dev/null google-chrome --new-tab http://127.0.0.1:5000/translate/{}",
+    "start": "node .",
+    "start-t": "ts-node ./[i,t]*.ts",
+    "start-comp": "node dist/index.js",
+    "live-c": "tsc -w",
+    "live-t": "nodemon --exec ts-node translator.ts",
+    "live-p": "nodemon index.js",
+    "live-f": "python3 -m http.server $1 && xdg-open http://127.0.0.1:$1",
+    "live-fd": "python3 -m http.server $1 && xdg-open http://127.0.0.1:$1 & ls | grep html | xargs xdg-open",
+    "test-a": "xargs chromium-browser < http://127.0.0.1:5000/$1/",
+    "test-s": "bash test/__test__.sh",
+    "test-devices": "python3 test/emulate.py",
+    "test-browsers": "export LH='http://127.0.0.1:$1/'; google-chrome --new-tab $LH & firefox -nt $LH & opera --with-feature:system-theme $LH & microsoft-edge-dev --app $LH & chromium --app $LH & google-chrome --incognite $LH",
+    "db-pg": "sudo -u postgres psql -U $1 -h 127.0.0.1 $2",
+    "db-pg-in": "sudo -u postgres createuser --interactive -P $1; sudo -u postgres createdb -O $1 $2",
+    "sql": "google-chrome --new-tab http://127.0.0.1:5500/graphql",
+    "sql-m": "mikro-orm migration:create",
+    "port-scan": "lsof -i :5000",
+    "scan": "top | grep $__PROJECT__",
+    "kill": "kill -9",
+    "m": "grep dependencies package.json -A 500 | tail -l",
+    "m-v": "cat package-lock.json | grep $1 -B 20 -A 20 | cb",
+    "glance": "find . -type f | xargs head -30 | more",
+    "prodvar": "touch src/constants.ts && echo 'export const __prod__ = process.env.NODE_ENV === \"production\"' > src/constants.ts && echo 'import { __prod__ } from \"./constants\";' | clipboard"
+  },
+  "keywords": [],
+  "author": "Christian P. Byrne",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "@types/node-fetch": "^2.5.10",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.9",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  }
+}

@@ -1,0 +1,6 @@
+Testing list_to_array()...
+
+Input list: (1, 2, 3) -> [4, 5, 6] -> sevenEightNine
+Returned list: [(1, 2, 3), [4, 5, 6], 'sevenEightNine']
+
+TESTCASE COMPLETED

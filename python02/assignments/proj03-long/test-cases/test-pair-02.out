@@ -1,0 +1,8 @@
+Testing pair()...
+
+Input list 1: muv -> pem -> sgl -> udm -> ypb -> tcf -> klh -> cyf -> pbg -> ngk -> cms -> ovn -> euc -> xqd -> mxe -> qka -> abc -> def -> ghi -> jkl
+Input list 2: -11 -> -3 -> 79 -> 19 -> 72 -> 21 -> 70 -> -4 -> -5 -> -35 -> 39 -> 79 -> 46 -> -6 -> -47 -> -24 -> 80 -> 45
+
+Output list: ('muv', -11) -> ('pem', -3) -> ('sgl', 79) -> ('udm', 19) -> ('ypb', 72) -> ('tcf', 21) -> ('klh', 70) -> ('cyf', -4) -> ('pbg', -5) -> ('ngk', -35) -> ('cms', 39) -> ('ovn', 79) -> ('euc', 46) -> ('xqd', -6) -> ('mxe', -47) -> ('qka', -24) -> ('abc', 80) -> ('def', 45)
+
+TESTCASE COMPLETED

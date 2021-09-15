@@ -1,0 +1,12 @@
+Testing the dl_remove() function
+
+Starting list:   10 <=> 20 <=> 30 <=> 40 <=> 50
+Remove position: 4
+
+Calling dl_remove()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after remove: 10 <=> 20 <=> 30 <=> 40
+
+TESTCASE COMPLETED

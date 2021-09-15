@@ -1,0 +1,60 @@
+<!--
+  Name: Christian P. Byrne
+  Course: CSC337
+  Description: Static HTML template for PA7 translator express app.
+               A somewhat responsive CSS grid for desktop use.
+               Textareas are hidden and the input is echoed to the next
+               sibling div. Using a CDN for primary font.
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Translator</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto"
+    />
+  </head>
+  <body>
+    <div>Translator</div>
+    <div>
+      <select>
+        <option value="English">English</option>
+        <option value="Spanish">Spanish</option>
+        <option value="German">German</option>
+      </select>
+      <div>
+        <textarea id="left"></textarea>
+        <div>Enter text here. . .</div>
+      </div>
+    </div>
+    <div>
+      <svg
+        focusable="false"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"
+        ></path>
+      </svg>
+    </div>
+    <div>
+      <select>
+        <option value="Spanish">Spanish</option>
+        <option value="English">English</option>
+        <option value="German">German</option>
+      </select>
+      <div>
+        <textarea id="right"></textarea>
+        <div>or here. . .</div>
+      </div>
+    </div>
+    <button type="submit">Dark Mode</button>
+    <script src="js/script.js"></script>
+  </body>
+</html>

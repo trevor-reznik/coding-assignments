@@ -1,0 +1,153 @@
+#! /usr/bin/python3
+
+from unzip import *
+
+
+
+def one_test(comp_data):
+    print(f'INPUT STREAM: {comp_data}')
+    raw_str = unzip(comp_data)
+    print(f'OUTPUT DATA:  "{raw_str}"')
+    print(f'Length comparisons: {len(comp_data)} -> {len(raw_str)}')
+    print()
+
+
+
+# --- GETTYSBURG ADDRESS ---
+
+gettysburg_raw = """four score and seven years ago our fathers brought forth on this continent a
+new nation, conceived in liberty, and dedicated to the proposition that all men
+are created equal.
+
+now we are engaged in a great civil war, testing whether that nation, or any
+nation so conceived and so dedicated, can long endure. we are met on a great
+battlefield of that war. we have come to dedicate a portion of that field, as a
+final resting place for those who here gave their lives that that nation might
+live. it is altogether fitting and proper that we should do this.
+
+but, in a larger sense, we can not dedicate, we can not consecrate, we can not
+hallow this ground. the brave men, living and dead, who struggled here, have
+consecrated it, far above our poor power to add or detract. the world will
+little note, nor long remember what we say here, but it can never forget what
+they did here. it is for us the living, rather, to be dedicated here to the
+unfinished work which they who fought here have thus far so nobly advanced. it
+is rather for us to be here dedicated to the great task remaining before
+us-that from these honored dead we take increased devotion to that cause for
+which they gave the last full measure of devotion-that we here highly resolve
+that these dead shall not have died in vain-that this nation, under god, shall
+have a new birth of freedom-and that government of the people, by the people,
+for the people, shall not perish from the earth."""
+
+
+
+# --- COMPRESSED FORM ---
+#
+# I wrote a VERY DUMB compressor function, which I used to compress the Gettysbug
+# Address.  I'm sure that the compression rate is *far* below what a good
+# function would generate, but hey, it's still fun!
+
+
+gettysburg_comp = ["four score and seven years ago ",
+                     (30, 4),
+                   "fathers brought forth on this continent a\nnew nation,",
+                     (24, 4),
+                   "ceived in liberty,",
+                     (100, 5),
+                   "dedicated to the propositi",
+                     (84, 5),
+                   "at all men\nare cre",
+                     (44, 5),
+                   "equal.\n\nnow we are engag",
+                     (97, 6),
+                   "a great civil war, testing whether that",
+                     (158, 9),
+                   "or any\nnation so",
+                     (175, 11),
+                   "and so dedicated, can long endure. we are met on a great\nbattlefield of that war",
+                     (47, 5),
+                   "have come t",
+                     (91, 10),
+                   " a portion of that field, as a\nfinal resting place for",
+                     (41, 3),
+                   "ose who here gave",
+                     (20, 3),
+                   "eir lives",
+                     (73, 5),
+                     (238, 12),
+                   " might\nlive. it is altogether fitting and prop",
+                     (19, 3),
+                   "that we should do",
+                     (18, 3),
+                   "is.\n\nbut, in a larger sense,",
+                     (44, 4),
+                   "can not dedicat",
+                     (21, 14),
+                   "consecr",
+                     (23, 15),
+                   "\nhallow this ground.",
+                     (13, 3),
+                   "e brave men, living and dead, who struggled here, h",
+                     (47, 3),
+                   "\nconsecrat",
+                     (23, 3),
+                   "it, far above our poo",
+                     (5, 4),
+                   "wer to add or detract",
+                     (117, 6),
+                   "world will\nlittle note,",
+                     (6, 3),
+                   "r long remember what we say",
+                     (129, 7),
+                   "but it can never forget what\nthey did here.",
+                     (40, 4),
+                   "is",
+                     (33, 4),
+                   " us the living, ra",
+                     (14, 3),
+                   "r, to be dedicate",
+                     (55, 6), " to the\nunfinished work which",
+                     (26, 4),
+                   "y who fought",
+                     (50, 6),
+                   "have thus far so nobly advanced. it\nis",
+                     (118, 7),
+                     (144, 9),
+                   "o be here",
+                     (934, 18),
+                   "great task remaining before\nus-th",
+                     (30, 3),
+                   "from these hon",
+                     (26, 3), "d dead we take increas",
+                     (23, 5),
+                   "votion to that cause for\nwhich",
+                     (21, 3),
+                   "ey gave",
+                     (10, 4),
+                   " last full measure of",
+                     (68, 9),
+                   "-that we her",
+                     (5, 3),
+                   "ighly resolve\n",
+                     (28, 5),
+                   "these dead shall not hav",
+                     (20, 3),
+                   "ied in vain-",
+                     (44, 7),
+                   "is nation, under god, shall\nhave a new birth of freedom-and that",
+                     (48, 3),
+                   "vernment",
+                     (31, 4),
+                   "the people, by",
+                     (15, 12),
+                   "\nfor",
+                     (31, 13),
+                   "shall not perish from the earth."]
+
+one_test(gettysburg_comp)
+
+
+
+print()
+print("TESTCASE COMPLETED")
+
+

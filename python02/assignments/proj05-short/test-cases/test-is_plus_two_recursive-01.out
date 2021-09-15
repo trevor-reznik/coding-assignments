@@ -1,0 +1,6 @@
+Testing is_plus_two_recursive()...
+
+Input list: 102 -> 104 -> 106 -> 108 -> 110
+retval: True
+
+TESTCASE COMPLETED

@@ -1,0 +1,20 @@
+<body>
+    
+<script>
+// Test by trying to add any event handler with same name as an HTMLElement property
+Object.getOwnPropertyNames(HTMLElement.prototype).includes("hidden")
+// true
+</script>
+
+<div onclick="hidden()">TEST 1</div>
+<div onclick="_hidden()">TEST 2</div>
+<script>
+  function hidden() {
+    console.log("hidden works")
+  }
+  function _hidden() {
+    console.log("_hidden works")
+  }
+</script>
+
+</body>

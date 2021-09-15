@@ -1,0 +1,12 @@
+Testing the dl_insert_before() function
+
+Starting list:   only
+Insert position: 0
+
+Calling dl_insert_before()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after insert: new <=> only
+
+TESTCASE COMPLETED

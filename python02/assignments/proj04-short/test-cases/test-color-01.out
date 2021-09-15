@@ -1,0 +1,31 @@
+Creating a new Color object.  r,g,b: 100,500,35
+Initial Color:
+  __str__()        returns: rgb(100,255,35)
+  html_hex_color() returns: #64FF23
+  get_rgb()        returns: (100, 255, 35)
+
+--- Setting the color: 'YELLOW'
+Color, after setting the color
+  __str__()        returns: rgb(255,255,0)
+  html_hex_color() returns: #FFFF00
+  get_rgb()        returns: (255, 255, 0)
+
+--- Setting the color: 'red'
+Color, after setting the color
+  __str__()        returns: rgb(255,0,0)
+  html_hex_color() returns: #FF0000
+  get_rgb()        returns: (255, 0, 0)
+
+--- Setting the color: 'blaCk'
+Color, after setting the color
+  __str__()        returns: rgb(0,0,0)
+  html_hex_color() returns: #000000
+  get_rgb()        returns: (0, 0, 0)
+
+--- Clearing the red component ---
+Color, after removing the red
+  __str__()        returns: rgb(0,0,0)
+  html_hex_color() returns: #000000
+  get_rgb()        returns: (0, 0, 0)
+
+TESTCASE COMPLETED

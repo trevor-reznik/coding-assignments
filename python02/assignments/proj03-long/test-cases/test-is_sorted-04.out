@@ -1,0 +1,6 @@
+Testing is_sorted()...
+
+Input list: ('nbj', 18) -> ('nsn', 39) -> ('swc', 11) -> ('qkh', 24) -> ('ytj', 22)
+retval: False
+
+TESTCASE COMPLETED

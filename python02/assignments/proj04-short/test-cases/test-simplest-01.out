@@ -1,0 +1,19 @@
+Inputs:
+  a = xyz
+  b = hello
+  c = world
+
+First Object:
+  obj.a = xyz
+  obj.b = hello
+  obj.c = world
+
+After making some changes...
+  obj.a = 123
+  obj.b = ['foo', 'bar', 'baz']
+  obj.c = (['foo', 'bar', 'baz'], ['foo', 'bar', 'baz'])
+
+Creating a new object, using multiples of the inputs:
+  obj.a = xyzxyz
+  obj.b = hellohellohello
+  obj.c = worldworldworldworld

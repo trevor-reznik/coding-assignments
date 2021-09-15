@@ -1,0 +1,148 @@
+/*
+ * Name: Christian P. Byrne
+ * Course: CSC337 Summer 2021
+ * Description: Stylesheet for Translator p.2 assignment. Most values I took from
+ *              the google translate iframe. The text input is hidden behind a wrapper
+ *              that echoes the input and receives output - so that I can add 
+ *              pseudo elements and animations to the text.
+ */
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: hsl(210deg, 17%, 98%);
+  --active-color: hsl(215deg, 81%, 56%);
+  --inactive-color: hsl(0deg, 0%, 46%);
+  --dark: hsl(0deg, 0%, 7%);
+}
+
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid:
+    "title title title" fit-content(5ch)
+    "panel1 gutter panel2" 1fr
+    / 49vw 2vw 1fr;
+  font-size: max(min(10vw, 6rem), 8px);
+  font-family: Roboto, arial, sans-serif;
+  background: var(--primary-color);
+}
+
+body > div:nth-of-type(1) {
+  grid-area: title;
+  text-align: center;
+  letter-spacing: -1.5px;
+}
+
+body > div:nth-of-type(2),
+body > div:nth-of-type(4) {
+  display: flex;
+  flex-direction: column;
+  padding: min(4vh, 2.5vw);
+}
+
+body > div:nth-of-type(2) {
+  grid-area: panel1;
+  align-items: flex-end;
+}
+
+body > div:nth-of-type(3) {
+  grid-area: gutter;
+  display: flex;
+  align-items: flex-start;
+  padding: calc(min(4vh, 2.5vw) + 1px) 0;
+}
+
+svg {
+  filter: invert(0.5);
+  cursor: pointer;
+}
+
+body > div:nth-of-type(4) {
+  grid-area: panel2;
+  align-items: flex-start;
+}
+
+select {
+  outline: 0;
+  font-size: min(4vh, 14px);
+  border: 1px solid #dfe1e5;
+  border-radius: 8px;
+  height: 40px;
+  padding-left: 18px;
+  position: relative;
+  cursor: pointer;
+  font-family: Roboto-medium, arial, sans-serif-medium, sans-serif;
+  width: 100%;
+  color: #1a73e8;
+  line-height: 40px;
+}
+
+textarea {
+  opacity: 0;
+  width: 40vw;
+  height: 100%;
+  position: absolute;
+}
+
+body > div > div {
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
+  text-align: start;
+  color: var(--inactive-color);
+  margin-top: 1ch;
+  padding: 0.25ch;
+}
+
+body > div > div.receiving {
+  color: var(--active-color);
+  background: var(--secondary-color);
+  animation: 0.35s ease-in-out 1 normal backwards flash-input;
+}
+@keyframes flash-input {
+  0%,
+  100% {
+    border: 0px solid var(--active-color);
+  }
+  50% {
+    border: 0.1rem solid var(--active-color);
+  }
+}
+
+body > div > div > div.focus {
+  color: var(--dark);
+}
+body > div > div > div.focus::after {
+  position: absolute;
+  content: "";
+  display: inline-block;
+  width: 0.5ch;
+  height: 1em;
+  margin: 0.1em 0.05em 0 0;
+  animation: blinking 1.2s infinite steps(1, start);
+}
+@keyframes blinking {
+  0%,
+  100% {
+    background-color: var(--primary-color); /* transparent */
+  }
+  50% {
+    background-color: var(--dark);
+  }
+}
+
+button {
+  position: absolute;
+  right: 1vw;
+  top: 1vh;
+  width: 50px;
+  border: none;
+  cursor: pointer;
+  padding: 1px;
+}

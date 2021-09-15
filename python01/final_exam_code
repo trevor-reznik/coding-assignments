@@ -1,0 +1,261 @@
+def run_the_code(information, price):
+    ''' You can expect that price will be an int
+        
+        products
+        will be a dictionay with 0 or more key/value pairs,
+            where both the keys and values are strings. '''
+    
+    
+    calc = 10
+    number = 1
+    string_res = ''
+    
+    for item in information:
+        if item < 'm':
+            number += 1
+            # LOCATION A
+            string_res += item[0:2]
+        for c in item:
+            if c > 'r':
+                calc += 10
+                # LOCATION B
+                string_res += c + c
+        if price - len(item) > 10:
+            calc += 50
+            number += 5
+        string_res += '##'
+        number += 1
+        # LOCATION C
+        print(calc, number, string_res)
+    print(calc)
+    # LOCATION D
+    return string_res
+
+
+# 1 sometimes
+# 2 sometimes
+# 3 sometimes
+x = {"hi" : 2, "three" :3 }
+
+for item in x:
+    print(item)
+
+if "l9" < "m":
+    print("works")
+
+-----------------------------
+
+
+
+
+def contains(twoDlist, any_len_str):
+    ct = 0
+    i = len(any_len_str)
+
+    for _ in twoDlist:
+        for s in _:
+            x = 0
+            y = i
+            while y <= len(s)+1:
+                print(y +x)
+                print(s)
+                print(s[x:y])
+                if s[x:y] == any_len_str:
+                    ct += 1
+                x += 1
+                y += 1
+    return ct
+
+
+strings = [ ['idea', 'instrument'],
+            ['cornish', 'rifle', 'plaza'],
+            ['tautology', 'ream']]
+
+print(contains(strings, "asdfasfdasfdsa"))
+  
+
+
+
+---------------
+
+
+import random
+
+
+# 0, 1, 2, 3
+
+numbers = {20, 22, 22}
+
+ret = []
+
+for _ in range(30000):
+    result = int(random.random() * 3)
+    for number in numbers:
+
+        result += random.randint(15, number)
+        # [0-3] += [15-20]
+        #       += [15-22]
+        #       += [15-22]
+    ret.append(result)
+
+
+print(
+    "max: ",
+    str(max(ret)),
+    "min: ",
+    str(min(ret))
+)
+
+
+# min
+print( str(3 + 20 + 22 + 22)) 
+
+# max
+print( str(0 + 15 + 15 + 15)) 
+
+print(random.randint(15, 22))
+
+
+---------------
+
+
+
+
+
+
+
+
+def run_code(cities):
+    ''' You can expect cities to be a dictionary
+        mapping cities (strings) to populations (integers)'''
+
+
+    for city_name in cities:
+        if city_name.startswith('T'):
+            print('City')
+            print(cities[city_name])
+        print(city_name)
+
+
+print(
+    run_code(
+        {
+            "ciiityname" : 123,
+            "secondcity" : 12312,
+            "Tsecondcity" : 12312
+
+        }
+    )
+)
+
+
+
+
+
+
+
+
+
+
+------------------
+
+
+
+
+
+
+
+def best_restaurant(str_keys_dict):
+    """
+    str_keys_dict : strings as keys (restaraunt names)
+                    lists as values (representing ratings for that restuarant out of 5 start)
+    return restaraunt with best avg. rating's name
+    """
+    b = ["",0]
+    for _ in str_keys_dict.keys():
+        x = 0
+        for s in str_keys_dict[_]: x += s
+        x = x/len(
+            str_keys_dict[_]
+        )
+        if x > b[1]: b = [_,x] 
+    return b[0]
+
+
+
+[[0 + x for x in y] for y in str_keys_dict]
+
+restaurants = { 'wildflower': [5, 5, 4, 2, 5],
+                'harvest': [4, 3, 1, 3, 4, 2, 4],
+                'olive garden': [1, 2, 3, 1, 2, 1, 1, 2, 3, 5, 3, 1, 4, 2, 1, 4] }
+result = best_restaurant(restaurants)
+print(result)
+
+
+---------------
+
+
+
+def capitalize(file_name):
+    """
+    open file, iterate through each word in each line.
+    overwrite original file with the same words, but where 
+    every word at the beginning of a line, and every word taht follows
+    a period +_ space gets capitalized. Void
+    """
+
+    f = open(file_name, "r"); l = f.readlines(); f.close()
+
+    ret = []
+    for line in l:
+        i = 0
+        cur = []
+        while i < len(line) - 2:
+            if i > 1:
+                if line[i-2] == "." and line[i-1] == " ":
+                    cur.append(line[i].upper())
+                else: cur.append(line[i])
+            elif i == 0: cur.append(line[i].upper())
+            else: cur.append(line[i])
+            i += 1
+        while i < len(line):
+            cur.append(line[i])
+            i += 1
+        ret.append("".join(cur))
+
+    f = open(file_name, "w")
+    for _ in ret: f.write(_)
+    f.close()
+
+
+    ---
+
+
+
+    from typing import Sized
+
+
+def calculate(strings):
+    result = 30
+    i = 0
+    # string = list of 3
+    while i < 3:
+        if strings[i] < 'j':
+            result += 5
+            # +/- 5
+        if strings[i] > 'n':
+            result += 20
+            # +/- 20
+        i += 1
+        print(i)
+    return result
+
+
+print(calculate(["h", "a", "w"]))
+
+
+
+
+
+
+

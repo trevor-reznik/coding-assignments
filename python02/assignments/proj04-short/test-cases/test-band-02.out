@@ -1,0 +1,52 @@
+Creating a new Band object.  Initial Singer: Kurt Cobain
+Initial Band:
+  Singer:  Kurt Cobain
+  Drummer: None
+  Guitars: []
+--- play_music() BEGIN ---
+bargle nawdle zouss
+--- play_music() END ---
+
+--- Adding a drummer: Russ
+After adding the drummer:
+  Singer:  Kurt Cobain
+  Drummer: Russ
+  Guitars: []
+--- play_music() BEGIN ---
+bargle nawdle zouss
+Bang bang bang!
+--- play_music() END ---
+
+--- Changing the singer: Frank Sinatra
+After changing the singer:
+  Singer:  Frank Sinatra
+  Drummer: Russ
+  Guitars: []
+--- play_music() BEGIN ---
+Do be do be do
+Bang bang bang!
+--- play_music() END ---
+
+--- Adding a guitar player: Kermit
+After adding the guitar player
+  Singer:  Frank Sinatra
+  Drummer: Russ
+  Guitars: ['Kermit']
+--- play_music() BEGIN ---
+Do be do be do
+Bang bang bang!
+Strum!
+--- play_music() END ---
+
+--- Changing the singer: Garth Brooks
+After changing the singer:
+  Singer:  Garth Brooks
+  Drummer: Russ
+  Guitars: ['Kermit']
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+Strum!
+--- play_music() END ---
+
+TESTCASE COMPLETED

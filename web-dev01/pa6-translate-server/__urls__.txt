@@ -1,0 +1,11 @@
+e2s/you+want+to+sail
+g2e/er+laufen+schnell
+s2e/absorbible+absorcio+SHOULDFAIL+absorcio+academia+aceptado+acesible
+e2s/DUPLICATS+he+he+he+he+he
+e2s/NUM+go+3+play+life+1
+e2s/SYMBOLS+%+@+1+\+0+}
+e2s/NULL
+e2s/CASE+EXPECT-la-vida-times-5+LIFE+LiFe+life+LIFe+lIFE+Life
+g2s/MULTI-SEP+++++returnthis
+s2g/VALID-SPANISH-TO-GERMAN:++EXPECTED:Zone--+zona+EXPECTED:Zebra--+cebras+EXPECTED:sogar--+au+EXPECTED:gelb--+amarillo+EXPECTED:Sorge--+preocuparse+EXPECTED:Arbiet--+trabajo+EXPECTED:Jahrbuch--+anuario+EXPECTED:Hure--+puta+EXPECTED:wiegen--+ponderar+EXPECTED:Woche--+semana
+g2s/VALID-GERMAN-TO-SPANISH:+EXPECTED:que--+wie+EXPECTED:la pesa--+Wucht+EXPECTED:la rueda--+Rad+EXPECTED:slibar--+Pfeife+EXPECTED:fines-de-semana--+Wochenenden+EXPECTED:la boda--+Heirat

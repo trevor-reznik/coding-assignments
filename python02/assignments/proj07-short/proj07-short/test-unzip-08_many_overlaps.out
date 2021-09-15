@@ -1,0 +1,24 @@
+INPUT STREAM: ['\n', 'a\n', 'b', (1, 1), (3, 1), (5, 7), 'c', (1, 2), (4, 1), (16, 28)]
+OUTPUT DATA:  "
+a
+bb
+a
+bb
+a
+ccc
+a
+bb
+a
+bb
+a
+ccc
+a
+bb
+a
+bb
+a
+"
+Length comparisons: 10 -> 45
+
+
+TESTCASE COMPLETED

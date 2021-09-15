@@ -1,0 +1,10 @@
+INPUT STREAM: ['a', (1, 20)]
+OUTPUT DATA:  "aaaaaaaaaaaaaaaaaaaaa"
+Length comparisons: 2 -> 21
+
+INPUT STREAM: ['a ', (2, 1), 'b ', (5, 4), 'c ', (11, 10), 'd ', (23, 22), 'e']
+OUTPUT DATA:  "a ab a abc a ab a abcd a ab a abc a ab a abcde"
+Length comparisons: 9 -> 46
+
+
+TESTCASE COMPLETED

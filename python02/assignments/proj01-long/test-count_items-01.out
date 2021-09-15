@@ -1,0 +1,17 @@
+File to scan: STEP 1: THE ORIGINAL DICTIONARY
+  Key: asdf Value: 9
+  Key: bbbb Value: 17
+  Key: foobar Value: 17
+  Key: jkl Value: 3
+
+STEP 2: A LIST OF VALUE->KEY TUPLES
+[(9, 'asdf'), (17, 'bbbb'), (17, 'foobar'), (3, 'jkl')]
+
+STEP 3: AFTER SORTING
+[(3, 'jkl'), (9, 'asdf'), (17, 'bbbb'), (17, 'foobar')]
+
+STEP 4: THE ACTUAL OUTPUT
+jkl 3
+asdf 9
+bbbb 17
+foobar 17

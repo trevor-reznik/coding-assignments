@@ -1,0 +1,185 @@
+<!-- 
+    Name: Christian P. Byrne
+    Course: CSC337
+    Description: HTML form for forms project. Member Signup for a fanclub. 
+                 Responsive page that validates and POSTs user input to external site.  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join | JFC</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <div>
+        <ul>
+          <li>
+            <img
+              src="img/4.jpg"
+              width="300"
+              height="200"
+              alt="a picture of a javelina"
+            />
+          </li>
+          <li>
+            <img
+              src="img/7.jpg"
+              width="300"
+              height="200"
+              alt="a picture of a javelina"
+            />
+          </li>
+          <li>
+            <img
+              src="img/6.jpg"
+              width="300"
+              height="200"
+              alt="a picture of a javelina"
+            />
+          </li>
+          <li>
+            <img
+              src="img/3.jpeg"
+              width="300"
+              height="200"
+              alt="a picture of a javelina"
+            />
+          </li>
+          <li>
+            <img
+              src="img/5.jpg"
+              height="300"
+              width="200"
+              alt="a picture of a javelina"
+            />
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h1>Member Registration - Javelina Fan Club</h1>
+      </div>
+      <div>
+        <div>
+          <p>
+            <b>Instructions</b> Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Tenetur, similique!
+          </p>
+        </div>
+        <div>
+          <div>First Name:</div>
+          <div>Last Name:</div>
+          <div>Email:</div>
+          <div>Password:</div>
+          <div>Recovery Email:</div>
+          <div>Phone Number:</div>
+          <div>Weight in lbs.:</div>
+          <div>Bio:</div>
+          <div>Birthday:</div>
+          <div>Sign up for Newsletter?</div>
+          <div>Satisfaction with Company</div>
+          <div>Submit</div>
+        </div>
+        <div class="form">
+          <form method="post" action="https://benjdd.com/sp/">
+            <div>
+              <label for="firstName"></label
+              ><input
+                required
+                name="First Name"
+                id="firstName"
+                type="text"
+                pattern="[A-Z]{1}[A-Za-z]{0,}"
+              />
+            </div>
+            <div>
+              <label for="lastName"></label
+              ><input
+                required
+                name="Last Name"
+                id="lastName"
+                type="text"
+                pattern="[A-Z]{1}[A-Za-z]{0,}"
+              />
+            </div>
+            <div>
+              <label for="email"></label
+              ><input required name="Primary Email" id="email" type="email" />
+            </div>
+            <div>
+              <label for="password"></label
+              ><input
+                required
+                name="Password"
+                id="password"
+                type="password"
+                minlength="8"
+              />
+            </div>
+            <div>
+              <label for="recoveryEmail"></label
+              ><input name="Recovery Email" id="recoveryEmail" type="email" />
+            </div>
+            <div>
+              <label for="phoneNumber"></label
+              ><input
+                name="Phone Number"
+                id="phoneNumber"
+                type="tel"
+                pattern="[0-9]{3}[-][0-9]{4}"
+              />
+            </div>
+            <div>
+              <label for="weight"></label
+              ><input name="Weight in lbs" id="weight" type="number" />
+            </div>
+            <div>
+              <label for="bio"></label
+              ><textarea rows="3" name="Bio" id="bio"></textarea>
+            </div>
+            <div>
+              <label for="birthday"></label
+              ><input name="Birthday" id="birthday" type="date" />
+            </div>
+            <div class="radio">
+              <label for="newsletter"></label> <b>Yes</b
+              ><input
+                required
+                name="Newsletter sign-up"
+                id="newsletter"
+                type="radio"
+                value="Yes"
+              />
+              <b>No</b
+              ><input
+                required
+                name="Newsletter sign-up"
+                id="newsletterno"
+                type="radio"
+                value="No"
+              />
+            </div>
+            <div>
+              <label for="satisfaction"></label
+              ><input
+                name="Satisfaction with company"
+                id="satisfaction"
+                type="range"
+                min="0"
+                max="10"
+              />
+            </div>
+            <div><input type="submit" value="Submit" /></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

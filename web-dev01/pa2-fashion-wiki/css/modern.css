@@ -1,0 +1,155 @@
+/* Author: Christian P. Byrne
+ * Class:  CSC337
+ * Description: stylesheet for modern fashion page. Using the material purple palette and
+ *              Material elevation/overlay system with global variables -- shadows and luminosity 
+ *              increase with elevatino of surfaces. Most values are variables. Grid for responiveness.
+ */
+
+ :root {
+  --primary-color: hsla(291deg, 95%, 75%, 0.87);
+  --secondary-color: hsla(291deg, 61%, 78%, 0.87);
+  --dark: hsla(0deg, 0%, 24%, 0.6);
+  --light: hsla(0deg, 100%, 100%, 0.87);
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Noto Sans, sans-serif;
+  font-size: 16px;
+  --elevation: 0.01px;
+  --overlay: 0.05;
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    font-size: 1.5vw;
+  }
+}
+
+div,
+span {
+  box-shadow: var(--elevation) calc(var(--elevation) * 2) 5px
+      rgba(2, 2, 2, 0.06),
+    calc(var(--elevation) * 0.35) calc(var(--elevation) * 0.5) 6px
+      rgba(2, 2, 2, 0.18);
+  background: linear-gradient(
+      rgba(63, 29, 203, var(--overlay)),
+      rgba(63, 29, 203, var(--overlay))
+    ),
+    linear-gradient(#ffffff, #ffffff);
+  margin: 12px;
+  padding: 12px;
+}
+
+/* main */
+body > div {
+  display: grid;
+  grid-template-columns: fit-content(20ch) repeat(3, 1fr);
+  grid-template-rows: fit-content(20ch) fit-content(30ch) auto;
+  grid-template-areas:
+    "icon . . ."
+    "title title title title"
+    "navbar navbar navbar navbar"
+    "main-1 main-1 main-tb main-2";
+}
+
+body > div > span {
+  grid-area: icon;
+  font-family: Arial, Helvetica, sans-serif;
+  --elevation: 0.5px;
+  --overlay: 0.07;
+}
+
+body > div > div:nth-of-type(-n + 2) {
+  color: var(--primary-color);
+  --elevation: 3px;
+  --overlay: 0.16;
+  font-size: 3rem;
+  text-align: center;
+}
+
+body > div > div:nth-of-type(1) {
+  grid-area: title;
+  letter-spacing: 1.5px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+body > div > div:nth-of-type(2) {
+  grid-area: navbar;
+  font-size: 2rem;
+  padding: 24px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--light) 25%,
+    transparent 25%,
+    transparent 50%,
+    var(--dark) 50%,
+    var(--dark) 75%,
+    transparent 75%,
+    var(--light)
+  );
+}
+
+a span {
+  background: var(--primary-color);
+  --elevation: 7px;
+  transition: all 0.4s ease-in-out;
+}
+
+a span:hover {
+  background: var(--secondary-color);
+  filter: brightness(1.5) drop-shadow(3px 3px 9px hsla(0deg, 0%, 12%, 0.37));
+  padding: 1ch;
+}
+
+a {
+  color: var(--light);
+  transition: all 0.1s ease-in-out;
+}
+
+a:hover {
+  color: var(--dark);
+}
+
+body > div > div:nth-of-type(n + 3) {
+  --elevation: 8px;
+  --overlay: 0.32;
+}
+
+body > div > div:nth-of-type(3) {
+  grid-area: main-1;
+}
+
+body > div > div:nth-of-type(4) {
+  grid-area: main-tb;
+}
+
+table * {
+  border: 1px solid var(--light);
+  border-collapse: collapse;
+  padding: 0.25ch;
+}
+
+th,
+h3 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 75%;
+  margin: 6px 5%;
+  border: 6px solid var(--primary-color);
+}
+
+body > div > div:nth-of-type(5) {
+  grid-area: main-2;
+}

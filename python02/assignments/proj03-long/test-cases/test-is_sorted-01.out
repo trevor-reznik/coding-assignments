@@ -1,0 +1,6 @@
+Testing is_sorted()...
+
+Input list: -38 -> 56 -> -1 -> -11 -> -47 -> 66 -> 21 -> 61 -> 19 -> 71 -> -2 -> -48 -> 57 -> 96 -> 68 -> -21 -> 95 -> -32 -> 67 -> 12
+retval: False
+
+TESTCASE COMPLETED

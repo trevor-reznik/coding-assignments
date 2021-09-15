@@ -1,0 +1,33 @@
+#!/bin/bash
+: 'Ubuntu Container Configuration Script
+
+____Usage_____
+
+export script='proj01_cbyrne_config_ubuntu' && sudo docker cp $script $CONTAINER_ID:/home/;
+# Moves to home if it is in root.
+sudo docker exec $CONTAINER_ID bash -c "ls $script && mv /$script /home/";
+# Exec permissions -> run. bash -c for multi-statement command arg to docker exec.
+sudo docker exec -w /home $CONTAINER_ID bash -c "chmod +x $script && ./$script";
+# Run inside of container if apt-get install -y will not properly skip all install messages
+
+
+'
+
+# Filler text to put into config files.
+MESSAGES=("If at this moment you and I, and all our companions, were not aboard these ships, in the midst of the sea, in this unknown solitude, in a condition as uncertain and risky as you please, what other situation in life would we find ourselves in?" "Do you think more happily? Or would we not rather be in some greater trouble or anxiety or else full of boredom?" "Even if we gain no other benefit from this voyage, it seems to me that it is most profitable to us, in that for a while it keeps us free of boredom, renders life dear to us, and makes us value many things that we would not otherwise take into account.")
+
+# Create config files using messages array and the array index for file name.
+echo_to_config () {
+    echo $1 > /config$2.txt
+}
+
+INDEX=0
+for MSG in "${MESSAGES[@]}"
+do
+    echo_to_config "${MSG}" ${INDEX}
+    let INDEX=${INDEX}+1
+done
+
+# Install software packages.
+apt-get update
+apt-get install -y vim net-tools npm ssh less python3 python3-pip

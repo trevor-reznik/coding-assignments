@@ -1,0 +1,12 @@
+Testing the dl_insert_after() function
+
+Starting list:   19 <=> 19 <=> 21 <=> 22 <=> 12 <=> 14 <=> 10
+Insert position: 4
+
+Calling dl_insert_after()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after insert: 19 <=> 19 <=> 21 <=> 22 <=> 12 <=> new <=> 14 <=> 10
+
+TESTCASE COMPLETED

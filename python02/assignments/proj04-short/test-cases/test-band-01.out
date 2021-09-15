@@ -1,0 +1,64 @@
+Creating a new Band object.  Initial Singer: Miss Piggy
+Initial Band:
+  Singer:  Miss Piggy
+  Drummer: None
+  Guitars: []
+--- play_music() BEGIN ---
+La la la
+--- play_music() END ---
+
+--- Adding a drummer: Animal
+After adding the drummer:
+  Singer:  Miss Piggy
+  Drummer: Animal
+  Guitars: []
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+--- play_music() END ---
+
+--- Adding a guitar player: Kermit
+After adding the guitar player
+  Singer:  Miss Piggy
+  Drummer: Animal
+  Guitars: ['Kermit']
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+Strum!
+--- play_music() END ---
+
+--- Adding a guitar player: Swedish Chef
+After adding the guitar player
+  Singer:  Miss Piggy
+  Drummer: Animal
+  Guitars: ['Kermit', 'Swedish Chef']
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+Strum!
+Strum!
+--- play_music() END ---
+
+--- Firing all guitar players ---
+After firing all guitar players
+  Singer:  Miss Piggy
+  Drummer: Animal
+  Guitars: []
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+--- play_music() END ---
+
+--- Adding a guitar player: Rowlf
+After adding the guitar player
+  Singer:  Miss Piggy
+  Drummer: Animal
+  Guitars: ['Rowlf']
+--- play_music() BEGIN ---
+La la la
+Bang bang bang!
+Strum!
+--- play_music() END ---
+
+TESTCASE COMPLETED

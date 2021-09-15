@@ -1,0 +1,12 @@
+Testing the dl_insert_before() function
+
+Starting list:   10 <=> 20 <=> 30 <=> 40 <=> 50
+Insert position: 4
+
+Calling dl_insert_before()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after insert: 10 <=> 20 <=> 30 <=> 40 <=> new <=> 50
+
+TESTCASE COMPLETED

@@ -1,0 +1,105 @@
+/* Name: Christian P. Byrne
+ * Course: CSC337
+ * Description: Stylesheet for second style (style B) in priceco assignment. 
+ *              Three evenly split columns with title and navbar in middle column.
+ *              Scrolling on side columns only.. 
+ */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  box-sizing: content-box;
+  overflow: hidden;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#header,
+#navigation,
+#productsColA,
+#productsColB {
+  position: absolute;
+  width: 33.33vw;
+  top: 0;
+  height: 100%;
+}
+
+#header {
+  left: 33.33vw;
+  height: 25vh;
+  background: #4460b9;
+  color: #eeee42;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#header div {
+  margin-left: 100px;
+}
+
+#header h1 {
+  padding: 1rem 0.25rem;
+  font-size: 2.5rem;
+  letter-spacing: -1.5px;
+  font-weight: bolder;
+}
+
+#header img {
+  position: absolute;
+  height: 100px;
+  left: 0;
+  top: 1rem;
+}
+
+#navigation {
+  background: #83b8eb;
+  left: 33.33vw;
+  top: 25vh;
+}
+
+#navigation a {
+  display: block;
+  font-size: 120%;
+  padding: 2.5rem 2rem 0;
+}
+
+#productsColA,
+#productsColB {
+  background: #a4ccec;
+  overflow-y: scroll;
+}
+#productsColA { left: 0; }
+#productsColB { left: 66.6666%; }
+
+.productDesc {
+  padding: 0 1ch;
+}
+
+#content img {
+  width: 50%;
+  padding: 0.5rem;
+}
+
+body > a {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  padding: 1ch 3ch;
+  color: hsla(207deg, 31%, 93%, 0.85);
+  background: hsla(4deg, 0%, 29%, 1);
+  margin: 0 0 0.2rem 0.2rem;
+  opacity: 0.6;
+}
+body > a:nth-of-type(2) {
+  left: 100px;
+}
+body > a:nth-of-type(3) {
+  left: 200px;
+}

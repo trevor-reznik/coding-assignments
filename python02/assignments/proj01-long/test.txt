@@ -1,0 +1,6 @@
+# ignore this line
+Oklahoma 3943079
+Oregon 4190713
+South Dakota 882235
+Pennsylvania 12807060
+Northern Mariana Islands 55194

@@ -1,0 +1,6 @@
+Testing list_length()...
+
+Input list: abc -> def -> ghi
+Returned val: 3
+
+TESTCASE COMPLETED

@@ -1,0 +1,30 @@
+
+
+- No more than 1 T per track
+    - Thus, the from must have T and to must not have a T
+- T always at front
+- Always connected units, right-justified
+- If there is a T and atleast one car and all the cars are the same, departure
+    - Show the result, inform user of departure, then print post-departure
+- You can move T (empty moves) to a new track
+
+What is your next command?
+Move : [# of cars] [from track] [to track]
+
+The locomotive on track [from] moved [# of cars] to track [to track]
+
+board
+Locomotive count:  #
+Destination count: #
+
+What is your next command?
+
+board
+*** ALERT***  The train on track [full track], which had [count] cars, departs for destination [str]
+
+board
+
+if command = quit
+Quitting!
+
+If all T are gone, end

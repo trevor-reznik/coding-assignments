@@ -1,0 +1,12 @@
+Testing the dl_insert_before() function
+
+Starting list:   1st <=> 2nd
+Insert position: 1
+
+Calling dl_insert_before()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after insert: 1st <=> new <=> 2nd
+
+TESTCASE COMPLETED

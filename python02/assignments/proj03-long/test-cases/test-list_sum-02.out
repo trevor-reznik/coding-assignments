@@ -1,0 +1,6 @@
+Testing list_sum()...
+
+Input list: 48 -> 90 -> 62 -> 90 -> 35 -> 42 -> 33 -> 72 -> -11 -> 39
+retval: 500
+
+TESTCASE COMPLETED

@@ -1,0 +1,15 @@
+Testing partition_list()...
+
+Input list: frontA -> frontB -> back
+Returned list 1: frontA -> back
+Returned list 2: frontB
+
+Checking to make sure that all of the nodes in the output list are
+from the input list.  If you see a failure reported here, then
+it's likely that you did one or more of the following:
+   - Created new nodes, instead of just changing the references
+   - Swapped values between nodes
+ ... Checking ...
+Output list node check complete.
+
+TESTCASE COMPLETED

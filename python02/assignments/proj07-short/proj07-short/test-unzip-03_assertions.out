@@ -1,0 +1,46 @@
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', 123, 456, 'xyz']
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abcabcabcabc', (1,)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (1, 2, 3), 'baz']
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', ('x', 2), 'baz']
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (1, 'y'), 'baz']
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: [(1, 1)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (4, 1)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (0, 1)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (-1, 1)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (3, 0)]
+SUCCESS!
+
+--- Testing an input stream, which we expect will result in an assertion failure. ---
+INPUT STREAM: ['abc', (3, -1)]
+SUCCESS!
+
+
+TESTCASE COMPLETED

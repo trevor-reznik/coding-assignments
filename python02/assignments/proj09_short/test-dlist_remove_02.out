@@ -1,0 +1,12 @@
+Testing the dl_remove() function
+
+Starting list:   abc <=> 123 <=> foo <=> bar <=> baz <=> 1024 <=> -1 <=> qwerty
+Remove position: 7
+
+Calling dl_remove()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after remove: abc <=> 123 <=> foo <=> bar <=> baz <=> 1024 <=> -1
+
+TESTCASE COMPLETED

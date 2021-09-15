@@ -1,0 +1,47 @@
+Inputs:
+  a = ___
+  b = asdflakjsdf
+  c = 33u0asdv
+
+First Object:
+  obj1.get_first()  = ___
+  obj1.get_second() = asdflakjsdf
+  obj1.get_third()  = 33u0asdv
+
+Second Object: (doubled strings)
+  obj2.get_first()  = ______
+  obj2.get_second() = asdflakjsdfasdflakjsdf
+  obj2.get_third()  = 33u0asdv33u0asdv
+
+Rotating the first object a few times...
+  obj1.get_first()  = asdflakjsdf
+  obj1.get_second() = 33u0asdv
+  obj1.get_third()  = ___
+
+  obj1.get_first()  = 33u0asdv
+  obj1.get_second() = ___
+  obj1.get_third()  = asdflakjsdf
+
+  obj1.get_first()  = ___
+  obj1.get_second() = asdflakjsdf
+  obj1.get_third()  = 33u0asdv
+
+  obj1.get_first()  = asdflakjsdf
+  obj1.get_second() = 33u0asdv
+  obj1.get_third()  = ___
+
+Checking to see that the second object is unchanged...
+  obj2.get_first()  = ______
+  obj2.get_second() = asdflakjsdfasdflakjsdf
+  obj2.get_third()  = 33u0asdv33u0asdv
+
+Rotating the second object a couple times...
+  obj2.get_first()  = asdflakjsdfasdflakjsdf
+  obj2.get_second() = 33u0asdv33u0asdv
+  obj2.get_third()  = ______
+
+  obj2.get_first()  = 33u0asdv33u0asdv
+  obj2.get_second() = ______
+  obj2.get_third()  = asdflakjsdfasdflakjsdf
+
+TESTCASE COMPLETED

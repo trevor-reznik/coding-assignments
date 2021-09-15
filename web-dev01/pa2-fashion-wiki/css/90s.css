@@ -1,0 +1,130 @@
+/* Author: Christian P. Byrne
+ * Class:  CSC337
+ * Description: Stylesheet for 90s fashion page. Global color variables are from the windows 95 gui.
+ *              The fonts are imported in the html.  Most values are variables. Grid for responiveness.
+ */
+
+ :root {
+  --primary-color: hsla(0deg, 0%, 75%, 0.87);
+  --secondary-color: hsl(240deg, 100%, 33%);
+  --dark: hsl(0deg, 0%, 7%);
+  --light: hsla(0deg, 100%, 100%, 0.87);
+  --retro-border: ridge hsl(0deg, 0%, 5%) 1px;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace, sans-serif;
+  font-size: 17px;
+  background: var(--secondary-color);
+}
+
+@media only screen and (min-width: 1300px) {
+  body {
+    font-size: 1.5vw;
+  }
+}
+
+/* main */
+body > div {
+  display: grid;
+  grid-template-columns: fit-content(20ch) repeat(3, 1fr);
+  grid-template-rows: fit-content(20ch) fit-content(30ch) auto;
+  grid-template-areas:
+    "icon . . ."
+    "title title title title"
+    "navbar navbar navbar navbar"
+    "main-1 main-1 main-tb main-2";
+}
+
+body > div > span {
+  grid-area: icon;
+  font-family: retroville;
+  font-size: 1.5rem;
+}
+
+body > div > div:nth-of-type(-n + 2) {
+  color: var(--light);
+  padding: 24px 24px;
+  margin: 10px 10px;
+  text-align: right;
+  font-size: 3rem;
+  border: 2px ridge var(--primary-color);
+  outline-offset: -2px;
+  border-radius: 1.5px;
+  outline: var(--retro-border);
+}
+
+body > div > div:nth-of-type(1) {
+  grid-area: title;
+  letter-spacing: 1.5px;
+  font-family: scifi;
+  background: linear-gradient(var(--primary-color), var(--secondary-color));
+}
+
+body > div > div:nth-of-type(2) {
+  grid-area: navbar;
+  font-family: windows;
+  font-size: 2rem;
+}
+
+a {
+  color: var(--light);
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  background: var(--light);
+  padding: 6px;
+  color: var(--dark);
+  filter: brightness(1.5) drop-shadow(6px 6px 9px hsla(0deg, 0%, 12%, 0.6));
+}
+
+body > div > div:nth-of-type(n + 3) {
+  background: var(--primary-color);
+  margin: 1ch;
+  outline-offset: -2px;
+  border-radius: 1.5px;
+  padding: 1.5ch;
+  outline: var(--retro-border);
+  box-shadow: 0 -6px 12px rgba(0, 0, 0, 0.3), 0 -10px 40px rgba(0, 0, 0, 0.2);
+}
+
+body > div > div:nth-of-type(3) {
+  grid-area: main-1;
+}
+
+body > div > div:nth-of-type(4) {
+  grid-area: main-tb;
+}
+
+table * {
+  border: 1px ridge var(--secondary-color);
+  border-collapse: collapse;
+  padding: 0.25ch;
+}
+
+th {
+  font-family: adventure;
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 90%;
+  margin: 12px;
+  border-radius: 6px;
+  border: 6px solid var(--primary-color);
+  outline: var(--retro-border);
+  outline-offset: -2px;
+}
+
+body > div > div:nth-of-type(5) {
+  grid-area: main-2;
+}

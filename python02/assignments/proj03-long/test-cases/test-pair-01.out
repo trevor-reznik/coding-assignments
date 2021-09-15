@@ -1,0 +1,8 @@
+Testing pair()...
+
+Input list 1: -35 -> 74 -> 32 -> 22 -> -28 -> 38 -> 78 -> 15 -> 18 -> 5 -> 30 -> -4 -> 63 -> 45 -> -27 -> 41
+Input list 2: vbp -> icn -> hxh -> vjb -> skf -> xml -> lgs -> iic -> whx -> puj -> gxf -> cru -> enx -> emw -> rwp -> arq -> vrx -> btx -> ger -> kjh
+
+Output list: (-35, 'vbp') -> (74, 'icn') -> (32, 'hxh') -> (22, 'vjb') -> (-28, 'skf') -> (38, 'xml') -> (78, 'lgs') -> (15, 'iic') -> (18, 'whx') -> (5, 'puj') -> (30, 'gxf') -> (-4, 'cru') -> (63, 'enx') -> (45, 'emw') -> (-27, 'rwp') -> (41, 'arq')
+
+TESTCASE COMPLETED

@@ -1,0 +1,6 @@
+INPUT STREAM: ['See Jack run. ', (11, 9), 's up the hill', (24, 8), 'and Ji', (16, 2), ' ro', (5, 3), 'down.']
+OUTPUT DATA:  "See Jack run.  Jack runs up the hill.  Jack and Jill roll down."
+Length comparisons: 9 -> 63
+
+
+TESTCASE COMPLETED

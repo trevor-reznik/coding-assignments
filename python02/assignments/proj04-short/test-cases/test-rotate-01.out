@@ -1,0 +1,47 @@
+Inputs:
+  a = xyz
+  b = hello
+  c = world
+
+First Object:
+  obj1.get_first()  = xyz
+  obj1.get_second() = hello
+  obj1.get_third()  = world
+
+Second Object: (doubled strings)
+  obj2.get_first()  = xyzxyz
+  obj2.get_second() = hellohello
+  obj2.get_third()  = worldworld
+
+Rotating the first object a few times...
+  obj1.get_first()  = hello
+  obj1.get_second() = world
+  obj1.get_third()  = xyz
+
+  obj1.get_first()  = world
+  obj1.get_second() = xyz
+  obj1.get_third()  = hello
+
+  obj1.get_first()  = xyz
+  obj1.get_second() = hello
+  obj1.get_third()  = world
+
+  obj1.get_first()  = hello
+  obj1.get_second() = world
+  obj1.get_third()  = xyz
+
+Checking to see that the second object is unchanged...
+  obj2.get_first()  = xyzxyz
+  obj2.get_second() = hellohello
+  obj2.get_third()  = worldworld
+
+Rotating the second object a couple times...
+  obj2.get_first()  = hellohello
+  obj2.get_second() = worldworld
+  obj2.get_third()  = xyzxyz
+
+  obj2.get_first()  = worldworld
+  obj2.get_second() = xyzxyz
+  obj2.get_third()  = hellohello
+
+TESTCASE COMPLETED

@@ -1,0 +1,26 @@
+INPUT STREAM: []
+OUTPUT DATA:  ""
+Length comparisons: 0 -> 0
+
+INPUT STREAM: ['abcd']
+OUTPUT DATA:  "abcd"
+Length comparisons: 1 -> 4
+
+INPUT STREAM: ['a', 'b', 'c', 'd']
+OUTPUT DATA:  "abcd"
+Length comparisons: 4 -> 4
+
+INPUT STREAM: ['a', 'a', 'a', 'a', 'b', 'b', 'b']
+OUTPUT DATA:  "aaaabbb"
+Length comparisons: 7 -> 7
+
+INPUT STREAM: ['H', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd']
+OUTPUT DATA:  "Hello world"
+Length comparisons: 11 -> 11
+
+INPUT STREAM: ['s', 'h', 'e', ' ', 's', 'e', 'l', 'l', 's', ' ', 's', 'e', 'a', ' ', 's', 'h', 'e', 'l', 'l', 's', ' ', 'b', 'y', ' ', 't', 'h', 'e', ' ', 's', 'e', 'a', ' ', 's', 'h', 'o', 'r', 'e']
+OUTPUT DATA:  "she sells sea shells by the sea shore"
+Length comparisons: 37 -> 37
+
+
+TESTCASE COMPLETED

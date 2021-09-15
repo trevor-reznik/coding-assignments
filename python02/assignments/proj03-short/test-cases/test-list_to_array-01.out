@@ -1,0 +1,6 @@
+Testing list_to_array()...
+
+Input list: 2 -> 3 -> 5 -> 7 -> 11 -> 13 -> 17 -> 19
+Returned list: [2, 3, 5, 7, 11, 13, 17, 19]
+
+TESTCASE COMPLETED

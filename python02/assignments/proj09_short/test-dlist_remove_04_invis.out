@@ -1,0 +1,12 @@
+Testing the dl_remove() function
+
+Starting list:   23 <=> 18 <=> 19 <=> 23 <=> 14 <=> 22
+Remove position: 1
+
+Calling dl_remove()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after remove: 23 <=> 19 <=> 23 <=> 14 <=> 22
+
+TESTCASE COMPLETED

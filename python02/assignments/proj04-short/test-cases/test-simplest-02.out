@@ -1,0 +1,19 @@
+Inputs:
+  a = ___
+  b = asdflakjsdf
+  c = 33u0asdv
+
+First Object:
+  obj.a = ___
+  obj.b = asdflakjsdf
+  obj.c = 33u0asdv
+
+After making some changes...
+  obj.a = 123
+  obj.b = ['foo', 'bar', 'baz']
+  obj.c = (['foo', 'bar', 'baz'], ['foo', 'bar', 'baz'])
+
+Creating a new object, using multiples of the inputs:
+  obj.a = ______
+  obj.b = asdflakjsdfasdflakjsdfasdflakjsdf
+  obj.c = 33u0asdv33u0asdv33u0asdv33u0asdv

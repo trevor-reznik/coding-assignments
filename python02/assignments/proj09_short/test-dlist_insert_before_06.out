@@ -1,0 +1,12 @@
+Testing the dl_insert_before() function
+
+Starting list:   555 <=> 444 <=> 333 <=> 222 <=> 111
+Insert position: 4
+
+Calling dl_insert_before()...
+
+Confirming that the new list follows the rules of a doubly-linked-list...
+  Results: OK
+List after insert: 555 <=> 444 <=> 333 <=> 222 <=> new <=> 111
+
+TESTCASE COMPLETED

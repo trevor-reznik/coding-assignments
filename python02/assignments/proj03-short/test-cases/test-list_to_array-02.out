@@ -1,0 +1,6 @@
+Testing list_to_array()...
+
+Input list: one -> two -> three -> four -> open -> the -> door
+Returned list: ['one', 'two', 'three', 'four', 'open', 'the', 'door']
+
+TESTCASE COMPLETED

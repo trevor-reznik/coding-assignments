@@ -1,0 +1,98 @@
+/* Name: Christian P. Byrne
+ * Course: CSC337
+ * Description: Stylesheet for first style (style A) in priceco assignment. 
+ *              Fixed header and navbar with scaling sizes and 
+ *              top-left-alligned brand icon. 
+ */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 25vh 1fr;
+  grid-template-columns: 30vw 1fr;
+  grid-template-areas:
+    "header header"
+    "navigation article";
+  font-size: 14px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+#header {
+  grid-area: header;
+  position: sticky;
+  top: 0;
+  background: #4460b9;
+  color: #eeee42;
+  text-align: right;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+#header h1 {
+  font-size: 3.5rem;
+  letter-spacing: -1.5px;
+  font-weight: bolder;
+  padding: 2vh 1.5vw;
+}
+
+#header img {
+  height: 25vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#navigation {
+  grid-area: navigation;
+  position: fixed;
+  background: #83b8eb;
+  top: 25vh;
+  width: 30vw;
+  height: 100vh;
+}
+
+#navigation a {
+  display: block;
+  text-align: right;
+  font-size: 120%;
+  padding: 2.5rem 2rem 0;
+}
+
+#content {
+  grid-area: article;
+  text-align: center;
+  background: #a4ccec;
+}
+
+#content img {
+  width: 25%;
+}
+
+#content > div,
+#content img {
+  padding: 0.25rem;
+}
+
+body > a {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 20px;
+  padding: 1ch 3ch;
+  color: hsla(207deg, 31%, 93%, 0.85);
+  background: hsla(4deg, 0%, 29%, 1);
+  margin: 0 0 0.2rem 0.2rem;
+  opacity: 0.6;
+}
+body > a:nth-of-type(2) {
+  left: 100px;
+}
+body > a:nth-of-type(3) {
+  left: 200px;
+}

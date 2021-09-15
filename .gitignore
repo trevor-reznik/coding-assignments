@@ -1,0 +1,11 @@
+**/**/*.mp4**
+**/**/*.flv**
+**/**/*.mp3**
+**/**/*.mkv**
+credentials.txt
+*.mp4
+*.mkv
+*.webp
+*.webm
+*.deb
+*.zip

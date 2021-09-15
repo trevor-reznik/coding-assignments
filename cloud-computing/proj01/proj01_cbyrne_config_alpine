@@ -1,0 +1,9 @@
+#!/bin/ash
+# Usage:
+# sudo docker cp *cbyrne*alpine* $CONTAINER_ID:/
+# # In Alpine container:
+# / # mv proj01* home/
+# / # chmod +x home/proj01_cbyrne_config_alpine
+# / # ./home/proj01_cbyrne_config_alpine
+
+apk add curl less nano python3 openssh vim busybox-extras --update

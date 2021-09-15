@@ -1,0 +1,28 @@
+TESTING TO SEE IF YOU PROPERLY DUPLICATE THE GUITAR LIST
+
+Creating a new Band object.  Initial Singer: Frank Sinatra's Favorite Cousin
+Initial Band:
+  Singer:  Frank Sinatra's Favorite Cousin
+  Drummer: None
+  Guitars: []
+--- play_music() BEGIN ---
+La la la
+--- play_music() END ---
+
+Band with 3 players
+  Singer:  Frank Sinatra's Favorite Cousin
+  Drummer: None
+  Guitars: ['Slash', 'Backslash', 'En']
+--- play_music() BEGIN ---
+La la la
+Strum!
+Strum!
+Strum!
+--- play_music() END ---
+
+The set of guitar players returned from the object: ['Slash', 'Backslash', 'En']
+
+--- CHANGING THE PLAYER LIST WE WERE GIVEN ---
+  Updated player list: ['Slash', 'asdf', 'En', 'jkl']
+  Band guitar list after changes were made to the array: ['Slash', 'Backslash', 'En']
+TESTCASE COMPLETED

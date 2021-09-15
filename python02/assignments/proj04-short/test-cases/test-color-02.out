@@ -1,0 +1,49 @@
+Creating a new Color object.  r,g,b: 127,127,127
+Initial Color:
+  __str__()        returns: rgb(127,127,127)
+  html_hex_color() returns: #7F7F7F
+  get_rgb()        returns: (127, 127, 127)
+
+--- Setting the color: 'BLACK'
+Color, after setting the color
+  __str__()        returns: rgb(0,0,0)
+  html_hex_color() returns: #000000
+  get_rgb()        returns: (0, 0, 0)
+
+--- Setting the color: 'white'
+Color, after setting the color
+  __str__()        returns: rgb(255,255,255)
+  html_hex_color() returns: #FFFFFF
+  get_rgb()        returns: (255, 255, 255)
+
+--- Clearing the red component ---
+Color, after removing the red
+  __str__()        returns: rgb(0,255,255)
+  html_hex_color() returns: #00FFFF
+  get_rgb()        returns: (0, 255, 255)
+
+--- Setting the color: 'black'
+Color, after setting the color
+  __str__()        returns: rgb(0,0,0)
+  html_hex_color() returns: #000000
+  get_rgb()        returns: (0, 0, 0)
+
+--- Setting the color: 'WHITE'
+Color, after setting the color
+  __str__()        returns: rgb(255,255,255)
+  html_hex_color() returns: #FFFFFF
+  get_rgb()        returns: (255, 255, 255)
+
+--- Clearing the red component ---
+Color, after removing the red
+  __str__()        returns: rgb(0,255,255)
+  html_hex_color() returns: #00FFFF
+  get_rgb()        returns: (0, 255, 255)
+
+--- Setting the color: 'yellow'
+Color, after setting the color
+  __str__()        returns: rgb(255,255,0)
+  html_hex_color() returns: #FFFF00
+  get_rgb()        returns: (255, 255, 0)
+
+TESTCASE COMPLETED

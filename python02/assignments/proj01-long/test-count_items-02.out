@@ -1,0 +1,47 @@
+File to scan: STEP 1: THE ORIGINAL DICTIONARY
+  Key: I'm Value: 0
+  Key: That's Value: 10
+  Key: Well Value: 6
+  Key: YOU Value: 5
+  Key: Yes. Value: 7
+  Key: ahead Value: -4
+  Key: and Value: 7
+  Key: asking Value: -4
+  Key: first. Value: -1
+  Key: go Value: -2
+  Key: it. Value: -1
+  Key: man's Value: -2
+  Key: me. Value: -4
+  Key: name. Value: 0
+  Key: name? Value: -5
+  Key: on Value: 6
+  Key: tell Value: -5
+  Key: the Value: 9
+  Key: who's Value: 18
+
+STEP 2: A LIST OF VALUE->KEY TUPLES
+[(0, "I'm"), (10, "That's"), (6, 'Well'), (5, 'YOU'), (7, 'Yes.'), (-4, 'ahead'), (7, 'and'), (-4, 'asking'), (-1, 'first.'), (-2, 'go'), (-1, 'it.'), (-2, "man's"), (-4, 'me.'), (0, 'name.'), (-5, 'name?'), (6, 'on'), (-5, 'tell'), (9, 'the'), (18, "who's")]
+
+STEP 3: AFTER SORTING
+[(-5, 'name?'), (-5, 'tell'), (-4, 'ahead'), (-4, 'asking'), (-4, 'me.'), (-2, 'go'), (-2, "man's"), (-1, 'first.'), (-1, 'it.'), (0, "I'm"), (0, 'name.'), (5, 'YOU'), (6, 'Well'), (6, 'on'), (7, 'Yes.'), (7, 'and'), (9, 'the'), (10, "That's"), (18, "who's")]
+
+STEP 4: THE ACTUAL OUTPUT
+name? -5
+tell -5
+ahead -4
+asking -4
+me. -4
+go -2
+man's -2
+first. -1
+it. -1
+I'm 0
+name. 0
+YOU 5
+Well 6
+on 6
+Yes. 7
+and 7
+the 9
+That's 10
+who's 18

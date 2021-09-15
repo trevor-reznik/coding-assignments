@@ -1,0 +1,10 @@
+INPUT STREAM: ['a', 'b', 'c', (2, 3)]
+OUTPUT DATA:  "abcbcb"
+Length comparisons: 4 -> 6
+
+INPUT STREAM: ['j', 'k', 'l', (3, 10)]
+OUTPUT DATA:  "jkljkljkljklj"
+Length comparisons: 4 -> 13
+
+
+TESTCASE COMPLETED

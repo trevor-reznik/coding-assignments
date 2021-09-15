@@ -1,0 +1,18 @@
+
+
+
+
+1. Given two strings, s1 and s2, return the index in s1 at which s2 begins, or -1 if s2 is not in s1. 
+1. Given a stack, remove the first k even numbers and return the number of evens removed. 
+1. Given an integer, return a new number containing only the even digits in the same order, or 0. 
+1. Given a queue of characters, evaluate it as a mathematical expression and return the result. 
+1. Given a stack of integers, replace each integer with two copies of it and don’t return anything. 
+1. Given a queue of integers, change each interger to twice its value and don’t return anything.
+
+
+The Recursion.java file contains more detailed descriptions and prototypes for each function. You may need to write some very short ‘helper functions’ but for the most part you will just need to implement the given function, and the code for a recursive function is typically very brief. 
+
+
+The RecursionTestClass.java contains code that is used to test the individual functions.  It uses JUnit, a Java library for unit testing. Unit testing is the process of examining a small "unit" of software, such as a single class or function, to verify that it meets its expectations. 
+
+

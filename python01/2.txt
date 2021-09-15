@@ -1,0 +1,5 @@
+army : ymra
+navy : yvan
+star : rats
+america : acirema
+bullet : tellub
